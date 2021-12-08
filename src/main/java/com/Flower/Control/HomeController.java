@@ -4,18 +4,27 @@ import java.text.DateFormat;
 import java.util.Date;
 import java.util.Locale;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+
+import org.apache.ibatis.session.SqlSession;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+
+import com.Member.DAO.MDao;
 
 /**
  * Handles requests for the application home page.
  */
 @Controller
 public class HomeController {
+	@Autowired
+	private SqlSession sqlSession;
 
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 
@@ -48,7 +57,20 @@ public class HomeController {
 	}
 
 	@RequestMapping(value = "/form_joinok")
-	public String form_joinok() {
+	public String form_joinok(HttpServletRequest request , Model model) {
+		MDao dao = sqlSession.getMapper(MDao.class);
+		int checkId = dao.checkIdDao(request.getParameter("mId"));	
+
+		model.addAttribute("checkId", checkId);
+		
+		if (checkId != 1) {
+			dao.joinDao(request.getParameter("mId"), request.getParameter("mPw"), request.getParameter("mName"), request.getParameter("mPhone"), request.getParameter("mAddr"), request.getParameter("mEmail"));
+			
+			HttpSession session = request.getSession();
+			session.setAttribute("mId", request.getParameter("mId"));
+			
+			model.addAttribute("mName", request.getParameter("mName"));
+		}
 
 		return "Member/form_joinok";
 	}

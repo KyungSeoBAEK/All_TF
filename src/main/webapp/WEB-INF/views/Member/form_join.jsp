@@ -72,13 +72,13 @@
 							<input style="width: 100%; height: 40px" type="text" name="mName" placeholder="이름">
 						</div>
 						<div>
-							<input style="width: 100%; height: 40px" type="text" name="mEmail" placeholder="이메일">
-						</div>
-						<div>
 							<input style="width: 100%; height: 40px" type="text" name="mPhone" placeholder="전화번호">
 						</div>
 						<div>
 							<input style="width: 100%; height: 40px" type="text" name="mAddr" placeholder="주소">
+						</div>
+						<div>
+							<input style="width: 100%; height: 40px" type="text" name="mEmail" placeholder="이메일">
 						</div>
 						<div style="padding-top: 20px;">
 							<input style="width: 100%; height: 30px; vertical-align:middle; background-color: #5f5f5f; color: #ffffff; border: none" type="submit"	value="가입하기">
