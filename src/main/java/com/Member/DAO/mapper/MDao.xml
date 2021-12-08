@@ -16,7 +16,7 @@
 	</insert>
 	<!-- public ContentDto loginOkDao(String mId); -->
 	<select id="loginOkDao" resultType="com.Member.DTO.MDto">
-		SELECT * FROM PMEMBER WHERE MID = #{param1}
+		SELECT * FROM MEMBERTBL WHERE MID = #{param1}
 	</select>
 	
 	<select id="checkIdDao" resultType="int">

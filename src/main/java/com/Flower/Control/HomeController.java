@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.Member.DAO.MDao;
+import com.Member.DTO.MDto;
 
 /**
  * Handles requests for the application home page.
@@ -38,11 +39,6 @@ public class HomeController {
 		return "Member/form_login";
 	}
 
-	@RequestMapping(value = "/loginOk")
-	public String loginOk() {
-
-		return "/loginOk";
-	}
 
 	@RequestMapping(value = "/logout")
 	public String logout() {
@@ -62,17 +58,41 @@ public class HomeController {
 		int checkId = dao.checkIdDao(request.getParameter("mId"));	
 
 		model.addAttribute("checkId", checkId);
-		
+
 		if (checkId != 1) {
 			dao.joinDao(request.getParameter("mId"), request.getParameter("mPw"), request.getParameter("mName"), request.getParameter("mPhone"), request.getParameter("mAddr"), request.getParameter("mEmail"));
-			
+
 			HttpSession session = request.getSession();
 			session.setAttribute("mId", request.getParameter("mId"));
-			
+
 			model.addAttribute("mName", request.getParameter("mName"));
 		}
 
 		return "Member/form_joinok";
+	}
+	
+	@RequestMapping(value = "/loginOk")
+	public String loginOk(HttpServletRequest request, Model model) {      
+
+		MDao dao = sqlSession.getMapper(MDao.class);
+		MDto mDto = dao.loginOkDao(request.getParameter("mId"));
+
+		int checkId = dao.checkIdDao(request.getParameter("mId"));
+		int checkPw = dao.checkPwDao(request.getParameter("mId"), request.getParameter("mPw"));
+
+		model.addAttribute("checkId", checkId);
+		model.addAttribute("checkPw", checkPw);
+
+		HttpSession session = request.getSession();
+
+		if(checkPw == 1) {
+			session.setAttribute("mId", mDto.getmID());
+			session.setAttribute("mName", mDto.getmName());
+			model.addAttribute("mId", mDto.getmID());
+			model.addAttribute("mName", mDto.getmName());
+		}
+
+		return "Member/loginOk";
 	}
 	//내 정보 보기(내 정보 삭제)  -- > 정보 수정
 	@RequestMapping(value = "/list_info")
