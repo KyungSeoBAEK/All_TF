@@ -1,0 +1,465 @@
+@charset "EUC-KR";
+
+/* 여기서 부터 장바구니의 스타일 */
+button.cart1{
+   background-color: white;
+   color: black;
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 10px;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+   width: 60px;
+   height: auto;
+   font-size: 13px;
+   padding: 6px 10px;
+}
+button.cart2{
+   background-color: white;
+   color: black;
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 10px;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+   width: 120px;
+   height: auto;
+   font-size: 13px;
+   padding: 6px 10px;
+}
+
+.bottomline{
+   border-bottom: 0.5px solid #00000010;
+}
+
+th.cart1{
+   text-align:center;
+   padding: 15px 8px;
+   color: #00000099;
+}
+th.cart2{
+   text-align:right;
+   padding: 15px 8px;
+   color: #00000099;
+}
+td.cart1{
+   text-align:center;
+   padding: 15px 8px;
+   color: #00000099;
+}
+td.cart2{
+   text-align:right;
+   padding: 15px 8px;
+   color: #00000099;
+}
+td.main1{
+   padding: 15px 8px 15px 0px;
+}
+th.main1{
+   padding: 15px 8px 15px 0px;
+}
+input.check_box{
+   margin-left: -20px;
+}
+
+a.product:link {
+   text-decoration: none;
+   color: #000000;
+}
+
+a.product:visited {
+   text-decoration: none;
+   color: #000000;
+}
+
+a.product:hover {
+   text-decoration: none;
+   color: #000000;
+}
+
+
+
+/* <!-- 여기부터 payment의 스타일 --> */
+
+div.pay_div{
+   width: 1129px;
+overflow:hidden;
+    height:auto;
+   padding: 0px 25px;
+   background-color: #f3f3f3;
+}
+div.left_div {
+   width:520px;
+overflow:hidden;
+    height:auto;
+   background-color: #F3F3F3;
+   float: left;
+}
+
+
+div.rigth_div {
+width : 325px;
+overflow:hidden;
+    height:auto;
+margin: 0px 0px 0px 16px;
+   background-color: #F3F3F3;
+   float: left;
+}
+form.pay{
+   background-color: #F3F3F3;
+   width: 1079px;
+overflow:hidden;
+    height:auto;
+   color: #212121;
+   font-size: 14px;
+}
+div.main_div{
+   width: 861px;
+overflow:hidden;
+    height:auto;
+   margin: 0px 109px 100px;
+   color: #212121;
+}
+
+div.side_left_box {
+   overflow:hidden;
+    height:auto;
+   width: 520px;
+   background-color: #ffffff;
+   margin-bottom: 16px;
+   padding: 24px;
+   float: left;
+}
+
+div.side_left_box_one {
+   width: 320px;
+   overflow:hidden;
+    height:auto;
+   background-color: #ffffff;
+   margin-bottom: 16px;
+   padding: 24px;
+   float: left;
+}
+
+span.E1 {
+   font-family: ARLRDBD;
+   font-size: 16px;
+}
+
+a.payment:link {
+   text-decoration: none;
+   color: #ffffff;
+}
+
+a.payment:visited {
+   text-decoration: none;
+   color: #ffffff;
+}
+
+a.payment:hover {
+   text-decoration: none;
+   color: #ffffff;
+}
+
+h6.product {
+   padding-bottom: 20px;
+   font-weight: bold;
+   font-size: 18px;
+   margin: 0px;
+}
+
+div.paynameleft {
+   width: 235px;
+   height: 36px;
+   float: left;
+   padding-left: 15px;
+   padding-right: 5px;
+}
+
+div.paynamerigth {
+   width: 235px;
+   height: 36px;
+   float: right;
+   padding-left: 5px;
+   padding-right: 15px;
+}
+
+div.paymail {
+   text-align:left;
+   width: 502px;
+   height: 46px;
+   float: left;
+   padding-left: 15px;
+   padding-right: 15px;
+   padding-top: 10px;
+   padding-bottom: 0px;
+}
+select.paymail {
+   text-align:left;
+   width: 502px;
+   height: 46px;
+   float: left;
+   padding-left: 15px;
+   padding-right: 15px;
+   padding-top: 10px;
+   padding-bottom: 0px;
+}
+
+input.input-type01{
+   width: 225px;
+   height: 34px;
+   padding: 7px 10.5px;
+}
+input.input-type02{
+   width: 450px;
+   height: 36px;
+   padding: 7px 10.5px;
+}
+
+
+
+p.p1{
+   width: 138.5px;
+   height: auto;
+   color: #999999;
+   text-align: left;
+}
+p.p2{
+   width: 138.5px;
+   height: auto;
+   color: #20252B;
+   text-align: right;
+}
+
+
+/* <!-- 여기 까지는 payment의 스타일 --> */@charset "EUC-KR";
+
+/* 여기서 부터 장바구니의 스타일 */
+button.cart1{
+   background-color: white;
+   color: black;
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 10px;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+   width: 60px;
+   height: auto;
+   font-size: 13px;
+   padding: 6px 10px;
+}
+button.cart2{
+   background-color: white;
+   color: black;
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 10px;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+   width: 120px;
+   height: auto;
+   font-size: 13px;
+   padding: 6px 10px;
+}
+
+.bottomline{
+   border-bottom: 0.5px solid #00000010;
+}
+
+th.cart1{
+   text-align:center;
+   padding: 15px 8px;
+   color: #00000099;
+}
+th.cart2{
+   text-align:right;
+   padding: 15px 8px;
+   color: #00000099;
+}
+td.cart1{
+   text-align:center;
+   padding: 15px 8px;
+   color: #00000099;
+}
+td.cart2{
+   text-align:right;
+   padding: 15px 8px;
+   color: #00000099;
+}
+td.main1{
+   padding: 15px 8px 15px 0px;
+}
+th.main1{
+   padding: 15px 8px 15px 0px;
+}
+input.check_box{
+   margin-left: -20px;
+}
+
+a.product:link {
+   text-decoration: none;
+   color: #000000;
+}
+
+a.product:visited {
+   text-decoration: none;
+   color: #000000;
+}
+
+a.product:hover {
+   text-decoration: none;
+   color: #000000;
+}
+
+
+
+/* <!-- 여기부터 payment의 스타일 --> */
+
+div.pay_div{
+   width: 1129px;
+overflow:hidden;
+    height:auto;
+   padding: 0px 25px;
+   background-color: #f3f3f3;
+}
+div.left_div {
+   width:520px;
+overflow:hidden;
+    height:auto;
+   background-color: #F3F3F3;
+   float: left;
+}
+
+
+div.rigth_div {
+width : 325px;
+overflow:hidden;
+    height:auto;
+margin: 0px 0px 0px 16px;
+   background-color: #F3F3F3;
+   float: left;
+}
+form.pay{
+   background-color: #F3F3F3;
+   width: 1079px;
+overflow:hidden;
+    height:auto;
+   color: #212121;
+   font-size: 14px;
+}
+div.main_div{
+   width: 861px;
+overflow:hidden;
+    height:auto;
+   margin: 0px 109px 100px;
+   color: #212121;
+}
+
+div.side_left_box {
+   overflow:hidden;
+    height:auto;
+   width: 520px;
+   background-color: #ffffff;
+   margin-bottom: 16px;
+   padding: 24px;
+   float: left;
+}
+
+div.side_left_box_one {
+   width: 320px;
+   overflow:hidden;
+    height:auto;
+   background-color: #ffffff;
+   margin-bottom: 16px;
+   padding: 24px;
+   float: left;
+}
+
+span.E1 {
+   font-family: ARLRDBD;
+   font-size: 16px;
+}
+
+a.payment:link {
+   text-decoration: none;
+   color: #ffffff;
+}
+
+a.payment:visited {
+   text-decoration: none;
+   color: #ffffff;
+}
+
+a.payment:hover {
+   text-decoration: none;
+   color: #ffffff;
+}
+
+h6.product {
+   padding-bottom: 20px;
+   font-weight: bold;
+   font-size: 18px;
+   margin: 0px;
+}
+
+div.paynameleft {
+   width: 235px;
+   height: 36px;
+   float: left;
+   padding-left: 15px;
+   padding-right: 5px;
+}
+
+div.paynamerigth {
+   width: 235px;
+   height: 36px;
+   float: right;
+   padding-left: 5px;
+   padding-right: 15px;
+}
+
+div.paymail {
+   text-align:left;
+   width: 502px;
+   height: 46px;
+   float: left;
+   padding-left: 15px;
+   padding-right: 15px;
+   padding-top: 10px;
+   padding-bottom: 0px;
+}
+select.paymail {
+   text-align:left;
+   width: 502px;
+   height: 46px;
+   float: left;
+   padding-left: 15px;
+   padding-right: 15px;
+   padding-top: 10px;
+   padding-bottom: 0px;
+}
+
+input.input-type01{
+   width: 225px;
+   height: 34px;
+   padding: 7px 10.5px;
+}
+input.input-type02{
+   width: 450px;
+   height: 36px;
+   padding: 7px 10.5px;
+}
+
+
+
+p.p1{
+   width: 138.5px;
+   height: auto;
+   color: #999999;
+   text-align: left;
+}
+p.p2{
+   width: 138.5px;
+   height: auto;
+   color: #20252B;
+   text-align: right;
+}
+
+
+/* <!-- 여기 까지는 payment의 스타일 --> */

@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+a.p_a:hover {
+	bottom: 30px;
+    text-align: center;
+    left: 0;
+    font-size: 13px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.p_name{
+	font-size: 22px !important;
+}
+
+.p_icon.sold_out {
+    vertical-align: middle;
+    font-size: initial;
+    margin-top: -5px;
+    background: #666;
+    border: 1px solid #666;
+}
