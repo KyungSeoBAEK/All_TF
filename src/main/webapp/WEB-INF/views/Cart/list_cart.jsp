@@ -26,7 +26,7 @@ String cartId = session.getId();
 		<div style="width: 100%; padding: 0px 25px; height: auto;">
 			<div style="width: 90%; height: auto;">
 				<h1 align="left"
-					style="width: 90%; font-size: 24px; margin: 40px 0px 15px; padding-left: 70px;">
+					style="width: 90%; font-size: 24px; margin: 40px 0px 15px; padding-left: 200px;">
 					장바구니<span>카운트값</span>
 				</h1>
 

@@ -101,6 +101,10 @@ public class HomeController {
 
 		return "list_info";
 	}
+	@RequestMapping(value = "/myinfo")
+	public String myinfo() {
+		return "Member/myinfo";
+	}
 	// 내 정보가 수정되는 페이지
 	@RequestMapping(value = "/info_modify")
 	public String info_modify() {

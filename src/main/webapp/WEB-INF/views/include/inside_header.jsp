@@ -17,17 +17,20 @@
    <!-- 세로네비 메뉴 -->
    <div class="container" style="width: 50%;">
       <ul class="nav flex-column" style="text-aling: left;">
-         <li class="nav-item">
-            <a href="#" class="nav-link">주문조회</a>
+      <li class="nav-item">
+            <a href="myinfo" class="nav-link">내 정보</a>
          </li>
          <li class="nav-item">
-            <a href="#" class="nav-link">장바구니</a>
+            <a href="info_modify" class="nav-link">정보수정</a>
+         </li>
+         <li class="nav-item">
+            <a href="info_order" class="nav-link">주문조회</a>
+         </li>
+         <li class="nav-item">
+            <a href="info_cart" class="nav-link">장바구니</a>
          </li>
          <li class="nav-item">
             <a href="#" class="nav-link">1:1문의</a>
-         </li>
-         <li class="nav-item">
-            <a href="#" class="nav-link">정보수정</a>
          </li>
          <li class="nav-item">
             <a href="#" class="nav-link">회원탈퇴</a>
