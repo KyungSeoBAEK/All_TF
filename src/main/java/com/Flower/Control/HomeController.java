@@ -40,11 +40,12 @@ public class HomeController {
 	}
 
 
-	@RequestMapping(value = "/logout")
-	public String logout() {
 
-		return "redirect:main";
-	}
+	 @RequestMapping(value = "/logout")
+	   public String logout() {
+	      
+	      return "Member/logout";
+	   }
 
 	@RequestMapping(value = "/form_join")
 	public String form_join() {
