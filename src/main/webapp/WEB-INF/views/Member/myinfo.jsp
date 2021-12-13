@@ -18,7 +18,7 @@
       </div>
       <!-- head -->
       <div style="width: 80%; height: auto%; padding: 50px 40px; float: left;">
-         <div style="width: 100%; height: 185px; margin: 0px 0px 40px; padding: 50px 0px 20px 45px; background-color: #ffffff;">
+         <div style="width: 80%; height: 185px; margin: 0px 0px 40px; padding: 50px 0px 20px 45px; background-color: #ffffff;">
             <div style="width: 50%; height: 85px; margin: 0px 0px 0px 24px; color: #212121; float: left;">
                <div style="width: 85px; height: 85px; float: left; margin-right: 25px;">
                   <img style="width: 85px; height: 85px;" src="${pageContext.request.contextPath}/resources/img/default_profile.png">
@@ -31,27 +31,28 @@
          <div style="width: 100%; height: 50px; margin: 0px 0px 40px; padding: 25px 0px 20px 0px; font-size: 22px; font-weight: bold;">
             정보수정
          </div>
-         <center>
-         <table border="0" cellspacing="0" cellpadding="10">
+
+
+         <table  border="0" cellspacing="0" cellpadding="10" style="width: 15%; text-align:center;">
             <form action="" method="post">
             <tr>
-               <td class="td-01">아이디</td>
+               <td class="td-01" style="padding: 20px;">아이디</td>
                <td></td>
             </tr>
             <tr>
-               <td class="td-01">이름</td>
+               <td class="td-01" style="padding: 25px;">이름</td>
                <td></td>
             </tr>
             <tr>
-               <td class="td-01">전화번호</td>
+               <td class="td-01" style="padding: 25px;">전화번호</td>
                <td></td>
             </tr>
             <tr>
-               <td class="td-01">주소</td>
+               <td class="td-01" style="padding: 25px;">주소</td>
                <td></td>
             </tr>
             <tr>
-               <td class="td-01">이메일</td>
+               <td class="td-01" style="padding: 25px;">이메일</td>
                <td></td>
             </tr>
             <tr>
@@ -60,7 +61,8 @@
             </tr>
             </form>
          </table>
-         </center>
+
+
       </div>
    </div>
 </body>

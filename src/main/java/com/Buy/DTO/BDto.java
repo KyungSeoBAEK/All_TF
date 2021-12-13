@@ -8,6 +8,7 @@ public class BDto {
 	private String bPhone;
 	private String bAddr;
 	private String bEamil;
+	private String bPname;
 	private String bPstock;
 	private String bPimg;
 	private String bTotal;
@@ -22,14 +23,15 @@ public class BDto {
 
 
 
-	public BDto(int bNum, String bName, String bPhone, String bAddr, String bEamil, String bPstock, String bPimg,
-			String bTotal, Date bDate) {
+	public BDto(int bNum, String bName, String bPhone, String bAddr, String bEamil, String bPname, String bPstock,
+			String bPimg, String bTotal, Date bDate) {
 		super();
 		this.bNum = bNum;
 		this.bName = bName;
 		this.bPhone = bPhone;
 		this.bAddr = bAddr;
 		this.bEamil = bEamil;
+		this.bPname = bPname;
 		this.bPstock = bPstock;
 		this.bPimg = bPimg;
 		this.bTotal = bTotal;
@@ -98,6 +100,18 @@ public class BDto {
 
 
 
+	public String getbPname() {
+		return bPname;
+	}
+
+
+
+	public void setbPname(String bPname) {
+		this.bPname = bPname;
+	}
+
+
+
 	public String getbPstock() {
 		return bPstock;
 	}
@@ -145,5 +159,6 @@ public class BDto {
 	}
 
 	
-	
+
+
 }

@@ -16,8 +16,10 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import com.Buy.DAO.BDao;
 import com.Member.DAO.MDao;
 import com.Member.DTO.MDto;
+import com.javayongju.profile_home.dao.IDao;
 
 /**
  * Handles requests for the application home page.
@@ -38,9 +40,7 @@ public class HomeController {
 
 		return "Member/form_login";
 	}
-
-
-
+	
 	 @RequestMapping(value = "/logout")
 	   public String logout() {
 	      
@@ -135,8 +135,8 @@ public class HomeController {
 
 	//장바구니 페이지
 	@RequestMapping(value = "/list_cart")
-	public String list_cart() {
-
+	public String list_cart(HttpServletRequest request, Model model) {
+		
 		return "Cart/list_cart";
 	}
 	// 상품 --> 장바구니
@@ -159,7 +159,10 @@ public class HomeController {
 	}
 	//내 정보에서 보는 결제목록
 	@RequestMapping(value = "/list_payment")
-	public String list_payment() {
+	public String list_payment(Model model) {
+		
+		BDao dao = sqlSession.getMapper(BDao.class);
+		model.addAttribute("list", dao.listDao());
 
 		return "Cart/list_payment";
 	}
@@ -171,8 +174,21 @@ public class HomeController {
 	}
 	//주문 목록
 	@RequestMapping(value = "/list_order")
-	public String list_order() {
-
+	public String list_order(HttpServletRequest request, Model model) {
+		
+		BDao dao = sqlSession.getMapper(BDao.class);
+		dao.orderDao(request.getParameter("bNum"), request.getParameter("bName"), request.getParameter("bPhone"), request.getParameter("bAddr"), request.getParameter("bEmail"), request.getParameter("bPname"), request.getParameter("bPstock"), request.getParameter("bPimg"), request.getParameter("bTotal"));
+		
+		/*
+		 * dao.orderDao(request.getParameter("bNum"), request.getParameter("bName"),
+		 * request.getParameter("bPhone"), request.getParameter("bAddr"),
+		 * request.getParameter("bEmail"), request.getParameter("bPname"),
+		 * request.getParameter("bPstock"), request.getParameter("bPimg"),
+		 * request.getParameter("bTotal"));
+		 */
+		/*
+		 * session id 값으로 MemberDto 값을 가져와서 히든으로 처리 해서 상품페이지에서 MemberDto 값을 불러 올 수 있게끔
+		 */
 		return "Cart/list_order";
 	}
 	//주문 취소

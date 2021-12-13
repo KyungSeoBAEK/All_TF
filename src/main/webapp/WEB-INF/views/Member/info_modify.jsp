@@ -18,7 +18,7 @@
       </div>
       <!-- head -->
       <div style="width: 80%; height: auto%; padding: 50px 40px; float: left;">
-         <div style="width: 100%; height: 185px; margin: 0px 0px 40px; padding: 50px 0px 20px 45px; background-color: #ffffff;">
+         <div style="width: 80%; height: 185px; margin: 0px 0px 40px; padding: 50px 0px 20px 45px; background-color: #ffffff;">
             <div style="width: 50%; height: 85px; margin: 0px 0px 0px 24px; color: #212121; float: left;">
                <div style="width: 85px; height: 85px; float: left; margin-right: 25px;">
                   <img style="width: 85px; height: 85px;" src="${pageContext.request.contextPath}/resources/img/default_profile.png">

@@ -54,7 +54,7 @@ String cartId = session.getId();
 									</div></th>
 								<th class="cart1" style="text-align: left;"><span
 									class="hidden_list">item</span></th>
-								<th class="cart1"><span>위시</span></th>
+								<th class="cart1"><span></span></th>
 								<th class="cart1"><span>수량</span></th>
 								<th class="cart1"><span>배송수단</span></th>
 								<th class="cart1"><span>배송비</span></th>
@@ -75,9 +75,9 @@ String cartId = session.getId();
 											<img src="">
 										</div>
 										<p style="width: 212px;">상품이름 넣을 곳</p></a></td>
-								<td class="cart1">♡</td>
+								<td class="cart1"></td>
 								<td class="cart1"><div>고른수량</div>
-									<div>변경하는버튼</div></td>
+									<div><button class="p_p">+</button><button class="p_m">-</button></div></td>
 								<td class="cart1"><div>택배</div></td>
 								<td class="cart1"><div>무료</div></td>
 								<td class="cart2"><div>상품수량X가격</div></td>

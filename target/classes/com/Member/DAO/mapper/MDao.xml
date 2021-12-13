@@ -32,5 +32,6 @@
 	<update id="infoModify">
 		UPDATE MEMBERTBL SET MPW =#{param1} , MPHONE=#{param2} , MADDR=#{param3}, MEMAIL=#{param4} WHERE MID = #{param5}
 	</update>
+	
 
 </mapper>
